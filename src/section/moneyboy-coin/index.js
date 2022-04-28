@@ -27,16 +27,11 @@ function MoneyboyCoin() {
           paddingY: "150px",
         },
         [theme.breakpoints.down("md")]: {
-          backgroundImage: "url(/images/moneyboy-coin-sp.webp)",
-          backgroundPosition: "right calc(40% + 180px)",
-          padding: "120px 0 230px",
-          backgroundSize: "55% auto",
-        },
-        [theme.breakpoints.down("sm")]: {
-          backgroundPosition: "right calc(70% + 115px)",
-          padding: "120px 0 180px",
-          backgroundSize: "60% auto",
-        },
+          backgroundImage: "url(/images/moneyboy-coin-sp.png)",
+          backgroundPosition: "bottom center",
+          padding: "80px 0 84%",
+          backgroundSize: "80% auto",
+        }
       }}
     >
       <Container fixed>
