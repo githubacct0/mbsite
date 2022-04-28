@@ -36,14 +36,15 @@ function MoneyPlex() {
       id="moneyplex"
       sx={{
         background: "#5249de",
-        backgroundImage: "url('/images/moneyplex.webp')",
+        backgroundImage: "url('/images/moneyplex-2.webp')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "right bottom",
         backgroundSize: "60% auto",
         padding: "160px 0",
-        [theme.breakpoints.up("xl")]: { backgroundSize: "55% auto" },
+        [theme.breakpoints.up("xl")]: { backgroundSize: "65% auto", backgroundPosition: "108% 100%" },
+        [theme.breakpoints.up("lg")]: { backgroundSize: "75% auto", backgroundPosition: "115% 100%" },
         [theme.breakpoints.down("md")]: { padding: "120px 0 150px" },
-        [theme.breakpoints.down("sm")]: { backgroundSize: "70% auto" },
+        [theme.breakpoints.down("sm")]: { backgroundSize: "110% auto", backgroundPosition: "-160% 100%", padding: "50px 0 250px" },
       }}
     >
       <Container fixed>
