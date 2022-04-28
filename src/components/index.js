@@ -12,7 +12,7 @@ export const Subtitle = styled(Typography)(({ theme }) => ({
   fontFamily: "PlusJakartaSans-Bold",
   fontSize: "55px",
   [theme.breakpoints.down("lg")]: { fontSize: "50px" },
-  [theme.breakpoints.down("sm")]: { fontSize: "40px" }
+  [theme.breakpoints.down("sm")]: { fontSize: "40px" },
 }));
 
 export const HeadChip = styled(Chip)({
@@ -27,14 +27,32 @@ export const HeadChip = styled(Chip)({
   },
 });
 
-export const ArrowLinkButton = styled(Button)({
+export const ArrowLinkButton = styled(Button, {
+  shouldForwardProp: (prop) => prop !== "mainColor",
+})(({ mainColor }) => ({
   fontFamily: "PlusJakartaSans-SemiBold",
   fontSize: "16px",
+  color: mainColor,
   padding: 0,
   textTransform: "none",
-  transition: "300ms",
-  "&:hover": { opacity: 0.8 },
+  position: "relative",
+  "&:hover::before": {
+    transform: "scaleX(1)",
+  },
+  "&::before": {
+    content: '""',
+    position: "absolute",
+    display: "block",
+    width: "100%",
+    height: "2px",
+    bottom: 0,
+    left: 0,
+    backgroundColor: mainColor,
+    transform: "scaleX(0)",
+    transformOrigin: "top left",
+    transition: "transform 0.3s ease",
+  },
   "& .MuiTouchRipple-root": {
     display: "none",
   },
-});
+}));

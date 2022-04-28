@@ -86,7 +86,8 @@ function MoneyPlex() {
         <ArrowLinkButton
           href="#"
           endIcon={<ArrowForwardIcon />}
-          sx={{ color: "#ffffff", marginTop: "28px" }}
+          mainColor="#ffffff"
+          sx={{ marginTop: "28px" }}
         >
           Go to moneyplex
         </ArrowLinkButton>

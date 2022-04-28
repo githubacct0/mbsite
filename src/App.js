@@ -1,5 +1,6 @@
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
+import ThemeProvider from "theme";
 import Header from "./section/header";
 import Top from "./section/top";
 import MoneyPlex from "./section/moneyplex";
@@ -12,7 +13,7 @@ import Footer from "./section/footer";
 function App() {
   console.log("App loaded");
   return (
-    <>
+    <ThemeProvider>
       <CssBaseline />
       <Header />
       <Box component="main">
@@ -24,7 +25,7 @@ function App() {
         <Staking /> */}
       </Box>
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

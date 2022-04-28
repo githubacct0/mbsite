@@ -100,7 +100,8 @@ function MoneyboyCoin() {
               </Typography>
               <ArrowLinkButton
                 endIcon={<ArrowForwardIcon sx={{ color: "#3bcd5b" }} />}
-                sx={{ color: "#060608", marginTop: "20px" }}
+                mainColor={"#060608"}
+                sx={{ marginTop: "20px" }}
               >
                 Read Tokenomics
               </ArrowLinkButton>
