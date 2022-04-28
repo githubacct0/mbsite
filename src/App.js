@@ -19,9 +19,9 @@ function App() {
         <Top />
         <MoneyPlex />
         <MoneyboyCoin />
-        <Collections />
+        {/* <Collections />
         <Store />
-        <Staking />
+        <Staking /> */}
       </Box>
       <Footer />
     </>
