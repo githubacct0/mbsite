@@ -42,7 +42,7 @@ function MoneyPlex() {
         overflowX: "hidden",
         [theme.breakpoints.down("md")]: { padding: "120px 0 150px" },
         [theme.breakpoints.down("sm")]: {
-          padding: "50px 0 200px",
+          padding: "80px 0 200px",
         },
       }}
     >
