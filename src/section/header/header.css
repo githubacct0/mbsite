@@ -1,3 +1,8 @@
+:root {
+  --animate-delay: 0.1s;
+  --animate-duration: 0.8s;
+}
+
 /* SHOW/HIDE HEADER WHEN SCROLL */
 header {
   background-color: #000000;
@@ -18,7 +23,6 @@ header.after-first-section #header-top {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  /* transform: scale(1.5); */
 }
 .menu-icon .menu-icon__cheeckbox {
   display: block;
