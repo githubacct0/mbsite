@@ -31,7 +31,7 @@ function MoneyboyCoin() {
           backgroundPosition: "bottom center",
           padding: "80px 0 84%",
           backgroundSize: "80% auto",
-        }
+        },
       }}
     >
       <Container fixed>
@@ -94,7 +94,7 @@ function MoneyboyCoin() {
                 $MBC by Staking.
               </Typography>
               <ArrowLinkButton
-                endIcon={<ArrowForwardIcon sx={{ color: "#3bcd5b" }} />}
+                endIcon={<ArrowForwardIcon />}
                 mainColor={"#060608"}
                 sx={{ marginTop: "20px" }}
               >
