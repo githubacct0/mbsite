@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Chip from "@mui/material/Chip";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -36,15 +37,13 @@ function MoneyPlex() {
       id="moneyplex"
       sx={{
         background: "#5249de",
-        backgroundImage: "url('/images/moneyplex-2.webp')",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "right bottom",
-        backgroundSize: "60% auto",
         padding: "160px 0",
-        [theme.breakpoints.up("xl")]: { backgroundSize: "65% auto", backgroundPosition: "108% 100%" },
-        [theme.breakpoints.up("lg")]: { backgroundSize: "75% auto", backgroundPosition: "115% 100%" },
+        position: "relative",
+        overflowX: "hidden",
         [theme.breakpoints.down("md")]: { padding: "120px 0 150px" },
-        [theme.breakpoints.down("sm")]: { backgroundSize: "110% auto", backgroundPosition: "-160% 100%", padding: "50px 0 250px" },
+        [theme.breakpoints.down("sm")]: {
+          padding: "80px 0 200px",
+        },
       }}
     >
       <Container fixed>
@@ -93,6 +92,31 @@ function MoneyPlex() {
           Go to moneyplex
         </ArrowLinkButton>
       </Container>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 0,
+          right: 0,
+          "& img": { width: "100%" },
+          [theme.breakpoints.up("sm")]: {
+            width: "65%",
+          },
+          [theme.breakpoints.up("md")]: {
+            width: "65%",
+          },
+          [theme.breakpoints.up("lg")]: {
+            width: "70%",
+          },
+          [theme.breakpoints.up("xl")]: {
+            width: "65%",
+          },
+          [theme.breakpoints.down("md")]: {
+            transform: "translateX(100px)",
+          },
+        }}
+      >
+        <img src="/images/moneyplex-2.webp" alt="MoneyPlex" />
+      </Box>
     </Box>
   );
 }
