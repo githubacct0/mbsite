@@ -39,5 +39,56 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      let doc = document.documentElement;
+      let w = window;
+
+      let prevScroll = w.scrollY || doc.scrollTop;
+      let curScroll;
+      let direction = 0;
+      let prevDirection = 0;
+
+      let checkScroll = function () {
+        /*
+         ** Find the direction of scroll
+         ** 0 - initial, 1 - up, 2 - down
+         */
+
+        let header = document.getElementById("header");
+        curScroll = w.scrollY || doc.scrollTop;
+        if (curScroll > prevScroll) {
+          //scrolled up
+          direction = 2;
+        } else if (curScroll < prevScroll) {
+          //scrolled down
+          direction = 1;
+        }
+
+        if (direction !== prevDirection) {
+          toggleHeader(direction, curScroll);
+        }
+
+        prevScroll = curScroll;
+        if (window.scrollY < window.innerHeight - 110) {
+          header.classList.remove("after-first-section");
+        }
+        if (window.scrollY >= window.innerHeight - 110) {
+          header.classList.add("after-first-section");
+        }
+      };
+
+      let toggleHeader = function (direction, curScroll) {
+        let header = document.getElementById("header");
+        if (direction === 2 && curScroll > 210) {
+          header.classList.add("hide");
+          prevDirection = direction;
+        } else if (direction === 1) {
+          header.classList.remove("hide");
+          prevDirection = direction;
+        }
+      };
+
+      window.addEventListener("scroll", checkScroll);
+    </script>
   </body>
 </html>
