@@ -87,6 +87,7 @@ function Top({ moneyboys }) {
                 left: "0px",
                 zIndex: 100,
                 fontFamily: "PlusJakartaSans-Bold",
+                mixBlendMode: "difference",
               },
               [theme.breakpoints.down("xl")]: {
                 "&::before": {
