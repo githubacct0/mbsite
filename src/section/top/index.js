@@ -28,15 +28,13 @@ function Letter({ letter, sx, image, setBackground }) {
         backgroundSize: "auto 100%",
         backgroundPosition: "center bottom",
         backgroundRepeat: "no-repeat",
+        maskImage: `url(${letterURL})`,
+        transition: ".3s ease-out",
         cursor: "pointer",
-        "& img": { width: "100%", visibility: "hidden" },
-        "&:hover": {
-          transition: "50ms ease-out",
-          maskImage: `url(${letterURL})`,
-        },
         "&:not(:hover)": {
-          maskImage: `url(${darkLetterURL})`,
+          opacity: 0.3,
         },
+        "& img": { width: "100%", visibility: "hidden" },
         ...sx,
       }}
       onMouseDown={() => setActive(true)}
