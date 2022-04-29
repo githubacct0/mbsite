@@ -29,9 +29,7 @@ function Collections() {
             fontStyle: "normal",
             lineHeight: 1.13,
             letterSpacing: "0.39px",
-            webkitBackgroundClip: "text",
             backgroundClip: "text",
-            webkitTextFillColor: "transparent",
             textFillColor: "transparent",
           }}
         >
