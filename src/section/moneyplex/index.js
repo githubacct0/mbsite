@@ -46,7 +46,7 @@ function MoneyPlex() {
         },
       }}
     >
-      <Container fixed>
+      <Container fixed className="animate__animated animate__fadeInUp">
         <HeadChip
           label="PRODUCT"
           variant="outlined"
@@ -93,6 +93,7 @@ function MoneyPlex() {
         </ArrowLinkButton>
       </Container>
       <Box
+        className="animate__animated animate__fadeInUp"
         sx={{
           position: "absolute",
           bottom: 0,
