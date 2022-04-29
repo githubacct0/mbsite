@@ -11,7 +11,6 @@ import Staking from "./section/staking";
 import Footer from "./section/footer";
 
 function App() {
-  console.log("App render");
   const moneyboys = Array(9)
     .fill(0)
     .map(

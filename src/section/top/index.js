@@ -53,7 +53,6 @@ function Letter({ letter, sx, image, setBackground }) {
 function Top({ moneyboys }) {
   const theme = useTheme();
   const [background, setBackground] = useState("none");
-  console.log("top section render");
   return (
     <Box
       component="section"
