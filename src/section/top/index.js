@@ -24,7 +24,7 @@ function Letter({ letter, sx, image, setBackground }) {
       sx={{
         maskSize: "100% auto",
         maskRepeat: "no-repeat",
-        backgroundColor: "#ffffff",
+        backgroundImage: `url(${image})`,
         backgroundSize: "auto 100%",
         backgroundPosition: "center bottom",
         backgroundRepeat: "no-repeat",
@@ -32,11 +32,10 @@ function Letter({ letter, sx, image, setBackground }) {
         "& img": { width: "100%", visibility: "hidden" },
         "&:hover": {
           transition: "50ms ease-out",
-          backgroundImage: `url(${image})`,
-          maskImage: isActive ? `url(${letterURL})` : `url(${darkLetterURL})`,
+          maskImage: `url(${letterURL})`,
         },
         "&:not(:hover)": {
-          maskImage: `url(${letterURL})`,
+          maskImage: `url(${darkLetterURL})`,
         },
         ...sx,
       }}
