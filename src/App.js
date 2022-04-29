@@ -11,13 +11,18 @@ import Staking from "./section/staking";
 import Footer from "./section/footer";
 
 function App() {
-  console.log("App loaded");
+  const moneyboys = Array(9)
+    .fill(0)
+    .map(
+      (_e) =>
+        `/images/moneyboys-nft/moneyboys${Math.floor(Math.random() * 29)}.webp`
+    );
   return (
     <ThemeProvider>
       <CssBaseline />
       <Header />
       <Box component="main">
-        <Top />
+        <Top moneyboys={moneyboys} />
         <MoneyPlex />
         <MoneyboyCoin />
         {/* <Collections />
