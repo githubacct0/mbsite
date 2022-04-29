@@ -9,7 +9,6 @@ function Header() {
   const theme = useTheme();
   const [isActive, setActive] = useState(false);
   const handleClick = () => {
-    console.log("toggle");
     setActive(!isActive);
   };
   return (
@@ -44,7 +43,8 @@ function Header() {
           },
         },
         "&:not(.active) nav": {
-          transform: "translateY(calc(-100% - 110px))",
+          // transform: "translateY(calc(-100% - 110px))",
+          display: "none",
         },
       }}
     >
@@ -156,6 +156,7 @@ function Header() {
           <Box component="li">
             <Link
               href="#moneyplex"
+              className="animate__animated animate__fadeInLeftBig"
               onClick={() => setActive(false)}
               sx={{
                 backgroundRepeat: "no-repeat",
@@ -175,6 +176,7 @@ function Header() {
           <Box component="li">
             <Link
               href="#moneyboy-coin"
+              className="animate__animated animate__fadeInLeftBig animate__delay-2s"
               onClick={() => setActive(false)}
               sx={{
                 backgroundRepeat: "no-repeat",
@@ -194,6 +196,7 @@ function Header() {
           <Box component="li">
             <Link
               href="#collections"
+              className="animate__animated animate__fadeInLeftBig animate__delay-3s"
               onClick={() => setActive(false)}
               sx={{
                 backgroundRepeat: "no-repeat",
@@ -216,6 +219,7 @@ function Header() {
           <Box component="li">
             <Link
               href="#store"
+              className="animate__animated animate__fadeInLeftBig animate__delay-4s"
               onClick={() => setActive(false)}
               sx={{
                 backgroundRepeat: "no-repeat",
@@ -235,6 +239,7 @@ function Header() {
           <Box component="li">
             <Link
               href="#staking"
+              className="animate__animated animate__fadeInLeftBig animate__delay-5s"
               onClick={() => setActive(false)}
               sx={{
                 backgroundRepeat: "no-repeat",
