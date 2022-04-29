@@ -7,7 +7,6 @@ import { useTheme } from "@mui/material/styles";
 function Letter({ letter, sx, image, setBackground }) {
   const [isActive, setActive] = useState(false);
   const letterURL = `/images/moneyboys-letter/${letter}.svg`;
-  const darkLetterURL = `/images/moneyboys-letter/${letter}-dark.svg`;
 
   useEffect(() => {
     if (isActive) {
@@ -28,13 +27,17 @@ function Letter({ letter, sx, image, setBackground }) {
         backgroundSize: "auto 100%",
         backgroundPosition: "center bottom",
         backgroundRepeat: "no-repeat",
-        maskImage: `url(${letterURL})`,
-        transition: ".3s ease-out",
         cursor: "pointer",
-        "&:not(:hover)": {
-          opacity: 0.3,
-        },
         "& img": { width: "100%", visibility: "hidden" },
+        "&:hover": {
+          opacity: `1`,
+          maskImage: `url(${letterURL})`,
+        },
+        "&:not(:hover)": {
+          maskImage: `url(${letterURL})`,
+          transition: ".3s ease-out",
+          opacity: `0.3`,
+        },
         ...sx,
       }}
       onMouseDown={() => setActive(true)}
@@ -47,6 +50,7 @@ function Letter({ letter, sx, image, setBackground }) {
     </Grid>
   );
 }
+
 function Top({ moneyboys }) {
   const theme = useTheme();
   const [background, setBackground] = useState("none");
