@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import ThemeProvider from "theme";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Header from "./section/header";
 import Top from "./section/top";
 import MoneyPlex from "./section/moneyplex";
@@ -11,6 +14,10 @@ import Staking from "./section/staking";
 import Footer from "./section/footer";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const moneyboys = Array(9)
     .fill(0)
     .map(

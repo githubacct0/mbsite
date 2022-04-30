@@ -111,10 +111,10 @@ function Footer() {
                   <Typography>LINKS</Typography>
                 </Box>
                 <Box>
-                  <Link href="#">Discord</Link>
+                  <Link href="#" target="_blank">Discord</Link>
                 </Box>
                 <Box>
-                  <Link href="#">Twitter</Link>
+                  <Link href="#" target="_blank">Twitter</Link>
                 </Box>
               </Grid>
             </Grid>

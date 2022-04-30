@@ -45,7 +45,7 @@ function MoneyPlex() {
         },
       }}
     >
-      <Container fixed className="animate__animated animate__fadeInUp">
+      <Container fixed data-aos="fade-up" data-aos-duration="500">
         <HeadChip
           label="PRODUCT"
           variant="outlined"
@@ -92,11 +92,11 @@ function MoneyPlex() {
         </ArrowLinkButton>
       </Container>
       <Box
-        className="animate__animated animate__fadeInUp"
         sx={{
           position: "absolute",
           bottom: 0,
           right: 0,
+          overflow: "hidden",
           "& img": { width: "100%" },
           [theme.breakpoints.up("sm")]: {
             width: "65%",
@@ -115,7 +115,9 @@ function MoneyPlex() {
           },
         }}
       >
-        <img src="/images/moneyplex-2.webp" alt="MoneyPlex" />
+        <Box data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+          <img src="/images/moneyplex-2.webp" alt="MoneyPlex" />
+        </Box>
       </Box>
     </Box>
   );
