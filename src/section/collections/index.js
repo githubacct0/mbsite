@@ -38,7 +38,7 @@ function Collections() {
       sx={{
         background: "#060608",
         color: "#ffffff",
-        padding: "220px 0 215px",
+        padding: "220px 0 250px",
         [theme.breakpoints.down("md")]: {
           padding: "150px 0 150px",
         },
@@ -99,6 +99,7 @@ function Collections() {
           disableGutters="true"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
           sx={{ position: "relative", zIndex: 100 }}
         >
           <Grid
@@ -119,9 +120,9 @@ function Collections() {
               data-aos="fade-up" 
               data-aos-duration="1000" 
               data-aos-offset="0" 
+              data-aos-once="true"
               sx={{ 
                 maxWidth: '800px', 
-                [theme.breakpoints.down("md")]: { marginBottom: "40px" }
               }}>
                 <img src="/images/moneyboys.webp" alt="MoneyBoys" className="fluid" />
               </Box>
@@ -129,6 +130,8 @@ function Collections() {
             <Grid
               item
               md={6}
+              className="collection-text-box"
+              data-scroll-speed="4"
               sx={{
                 paddingLeft: "94px",
                 [theme.breakpoints.down("xl")]: { paddingLeft: "80px" },
@@ -136,7 +139,7 @@ function Collections() {
                 [theme.breakpoints.down("md")]: { padding: "0 30px" },
               }}
             >
-              <div data-scroll-speed="4">
+
               <HeadChip
                 label="OG COLLECTION"
                 variant="outlined"
@@ -171,7 +174,7 @@ function Collections() {
                   marginTop: "42px",
                 }}
               />
-              </div>
+
             </Grid>
           </Grid>
         </Container>
@@ -188,6 +191,7 @@ function Collections() {
           disableGutters="true"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
           sx={{ position: "relative", zIndex: 100 }}
           >
           <Grid
@@ -209,8 +213,8 @@ function Collections() {
               },
             }}
           >
-            <Grid item md={6} sx={{
-              [theme.breakpoints.up("md")]: { paddingLeft: "10%" },
+            <Grid item className="collection-text-box" data-scroll-speed="4" md={6} sx={{
+              [theme.breakpoints.up("md")]: { paddingLeft: "10% !important" },
               [theme.breakpoints.down("md")]: { padding: "0 30px" },
             }}>
               <HeadChip
@@ -252,11 +256,12 @@ function Collections() {
                 data-aos="fade-up" 
                 data-aos-duration="1000" 
                 data-aos-offset="0" 
+                data-aos-once="true"
                 sx={{ 
                   maxWidth: "800px",
                   width: "100%", 
                   float: "right",
-                  [theme.breakpoints.down("md")]: {  marginBottom: "40px", float: "left" }
+                  [theme.breakpoints.down("md")]: { float: "left" }
                 }}>
                   <img src="/images/moneygirls.webp" alt="MoneyBoys" className="fluid" />
                 </Box>
@@ -281,6 +286,7 @@ function Collections() {
           disableGutters="true"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
           sx={{ position: "relative", zIndex: 100 }}
         >
           <Grid
@@ -302,6 +308,7 @@ function Collections() {
               data-aos="fade-up" 
               data-aos-duration="1000" 
               data-aos-offset="0" 
+              data-aos-once="true"
               sx={{ 
                 maxWidth: '800px', 
                 [theme.breakpoints.down("md")]: { maxWidth: "90%", marginBottom: "40px" }
@@ -312,8 +319,11 @@ function Collections() {
             <Grid
               item
               md={6}
+              data-scroll-speed="4"
+              className="collection-text-box"
               sx={{
                 paddingLeft: "94px",
+                [theme.breakpoints.up("md")]: { marginTop: "-150px !important" },
                 [theme.breakpoints.down("xl")]: { paddingLeft: "80px" },
                 [theme.breakpoints.down("lg")]: { paddingLeft: "70px" },
                 [theme.breakpoints.down("md")]: { padding: "0 30px" },
