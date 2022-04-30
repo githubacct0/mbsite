@@ -32,9 +32,9 @@ function App() {
         <Top moneyboys={moneyboys} />
         <MoneyPlex />
         <MoneyboyCoin />
-        {/* <Collections />
+        <Collections />
         <Store />
-        <Staking /> */}
+        <Staking />
       </Box>
       <Footer />
     </ThemeProvider>

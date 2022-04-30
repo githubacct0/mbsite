@@ -6,6 +6,8 @@ import Button from "@mui/material/Button";
 export const Title = styled(Typography)(({ theme }) => ({
   fontFamily: "PlusJakartaSans-Bold",
   fontSize: "80px",
+  [theme.breakpoints.down("lg")]: { fontSize: "70px" },
+  [theme.breakpoints.down("sm")]: { fontSize: "50px" },
 }));
 
 export const Subtitle = styled(Typography)(({ theme }) => ({

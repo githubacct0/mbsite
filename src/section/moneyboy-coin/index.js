@@ -84,15 +84,17 @@ function MoneyboyCoin() {
                 <Box
                   component="span"
                   sx={{ [theme.breakpoints.up("sm")]: { display: "block" } }}
-                ></Box>
+                />
                 MoneyPlex and buy goods on the $MBC Store. Earn{" "}
                 <Box
                   component="span"
                   sx={{ [theme.breakpoints.up("sm")]: { display: "block" } }}
-                ></Box>
+                />
                 $MBC by Staking.
               </Typography>
               <ArrowLinkButton
+                href="#"
+                target="_blank"
                 endIcon={<ArrowForwardIcon />}
                 mainColor={"#060608"}
                 sx={{ marginTop: "20px" }}
@@ -125,8 +127,7 @@ function MoneyboyCoin() {
             backgroundSize: "80% auto",
           },
         }}
-      >
-      </Box>
+      ></Box>
     </Box>
   );
 }
