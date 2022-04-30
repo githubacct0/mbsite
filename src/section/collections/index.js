@@ -49,11 +49,18 @@ function Collections() {
     >
       <Box sx={{ textAlign: "center" }}>
         <HeadChip
+          data-aos="fade-in"
+          data-aos-duration="700"
+          data-aos-once="true"
           label="NFT COLLECTIONS"
           variant="outlined"
           sx={{ borderColor: "#44d3ff", color: "#44d3ff" }}
         />
         <Title
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-easing="ease-out-quad"
           sx={{
             marginTop: "32px",
             backgroundImage: "linear-gradient(104deg, #00d0ff 2%, #c933ff 99%)",
@@ -88,7 +95,8 @@ function Collections() {
         }}
       >
         <Container
-          fixed
+          className="container-fluid"
+          disableGutters="true"
           data-aos="fade-up"
           data-aos-duration="1000"
           sx={{ position: "relative", zIndex: 100 }}
@@ -102,12 +110,22 @@ function Collections() {
               [theme.breakpoints.down("lg")]: { height: 470 },
               [theme.breakpoints.down("md")]: {
                 height: "fit-content",
-                paddingBottom: "350px",
+                paddingBottom: "30px",
               },
-              [theme.breakpoints.down("sm")]: { paddingBottom: "300px" },
             }}
           >
-            <Grid item md={6}></Grid>
+            <Grid item md={6}>
+              <Box 
+              data-aos="fade-up" 
+              data-aos-duration="1000" 
+              data-aos-offset="0" 
+              sx={{ 
+                maxWidth: '800px', 
+                [theme.breakpoints.down("md")]: { marginBottom: "40px" }
+              }}>
+                <img src="/images/moneyboys.webp" alt="MoneyBoys" className="fluid" />
+              </Box>
+            </Grid>
             <Grid
               item
               md={6}
@@ -115,9 +133,10 @@ function Collections() {
                 paddingLeft: "94px",
                 [theme.breakpoints.down("xl")]: { paddingLeft: "80px" },
                 [theme.breakpoints.down("lg")]: { paddingLeft: "70px" },
-                [theme.breakpoints.down("md")]: { paddingLeft: 0 },
+                [theme.breakpoints.down("md")]: { padding: "0 30px" },
               }}
             >
+              <div data-scroll-speed="4">
               <HeadChip
                 label="OG COLLECTION"
                 variant="outlined"
@@ -152,26 +171,10 @@ function Collections() {
                   marginTop: "42px",
                 }}
               />
+              </div>
             </Grid>
           </Grid>
         </Container>
-        <Box
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          sx={{
-            position: "absolute",
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-            backgroundImage: "url(/images/moneyboys.webp)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left bottom",
-            backgroundSize: "auto 100%",
-            [theme.breakpoints.down("md")]: { backgroundSize: "auto 300px" },
-            [theme.breakpoints.down("sm")]: { backgroundSize: "auto 250px" },
-          }}
-        />
       </Box>
       <Box
         id="collection-moneygirls"
@@ -181,11 +184,12 @@ function Collections() {
         }}
       >
         <Container
-          fixed
+          className="container-fluid"
+          disableGutters="true"
           data-aos="fade-up"
           data-aos-duration="1000"
           sx={{ position: "relative", zIndex: 100 }}
-        >
+          >
           <Grid
             container
             sx={{
@@ -199,12 +203,16 @@ function Collections() {
               },
               [theme.breakpoints.down("md")]: {
                 height: "fit-content",
-                paddingBottom: "350px",
+                paddingBottom: "50px",
+                flexDirection: "column-reverse",
+                alignItems: "baseline",
               },
-              [theme.breakpoints.down("sm")]: { paddingBottom: "300px" },
             }}
           >
-            <Grid item md={6}>
+            <Grid item md={6} sx={{
+              [theme.breakpoints.up("md")]: { paddingLeft: "10%" },
+              [theme.breakpoints.down("md")]: { padding: "0 30px" },
+            }}>
               <HeadChip
                 label="NFT"
                 variant="outlined"
@@ -238,30 +246,25 @@ function Collections() {
                 }}
               />
             </Grid>
-            <Grid item md={6}></Grid>
+            <Grid item md={6}>
+
+              <Box 
+                data-aos="fade-up" 
+                data-aos-duration="1000" 
+                data-aos-offset="0" 
+                sx={{ 
+                  maxWidth: "800px",
+                  width: "100%", 
+                  float: "right",
+                  [theme.breakpoints.down("md")]: {  marginBottom: "40px", float: "left" }
+                }}>
+                  <img src="/images/moneygirls.webp" alt="MoneyBoys" className="fluid" />
+                </Box>
+
+            </Grid>
           </Grid>
         </Container>
-        <Box
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          sx={{
-            position: "absolute",
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-            backgroundImage: "url(/images/moneygirls.webp)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right bottom",
-            backgroundSize: "auto 100%",
-            [theme.breakpoints.down("md")]: {
-              backgroundSize: "auto calc(300px * 841 / 700)",
-            },
-            [theme.breakpoints.down("sm")]: {
-              backgroundSize: "auto calc(250px * 841 / 700)",
-            },
-          }}
-        />
+
       </Box>
       <Box
         id="collection-diamondboys"
@@ -274,7 +277,8 @@ function Collections() {
         }}
       >
         <Container
-          fixed
+          className="container-fluid"
+          disableGutters="true"
           data-aos="fade-up"
           data-aos-duration="1000"
           sx={{ position: "relative", zIndex: 100 }}
@@ -293,7 +297,18 @@ function Collections() {
               [theme.breakpoints.down("sm")]: { paddingBottom: "300px" },
             }}
           >
-            <Grid item md={6}></Grid>
+            <Grid item md={6}>
+              <Box 
+              data-aos="fade-up" 
+              data-aos-duration="1000" 
+              data-aos-offset="0" 
+              sx={{ 
+                maxWidth: '800px', 
+                [theme.breakpoints.down("md")]: { maxWidth: "90%", marginBottom: "40px" }
+              }}>
+                <img src="/images/diamondboys.webp" alt="DiamondBoys" className="fluid" />
+              </Box>
+            </Grid>
             <Grid
               item
               md={6}
@@ -301,7 +316,7 @@ function Collections() {
                 paddingLeft: "94px",
                 [theme.breakpoints.down("xl")]: { paddingLeft: "80px" },
                 [theme.breakpoints.down("lg")]: { paddingLeft: "70px" },
-                [theme.breakpoints.down("md")]: { paddingLeft: 0 },
+                [theme.breakpoints.down("md")]: { padding: "0 30px" },
               }}
             >
               <HeadChip
@@ -340,23 +355,6 @@ function Collections() {
             </Grid>
           </Grid>
         </Container>
-        <Box
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          sx={{
-            position: "absolute",
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-            backgroundImage: "url(/images/diamondboys.webp)",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left bottom",
-            backgroundSize: "auto 100%",
-            [theme.breakpoints.down("md")]: { backgroundSize: "auto 300px" },
-            [theme.breakpoints.down("sm")]: { backgroundSize: "auto 250px" },
-          }}
-        />
       </Box>
     </Box>
   );

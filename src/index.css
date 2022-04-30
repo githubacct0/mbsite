@@ -22,3 +22,12 @@ html {
 img {
   vertical-align: top;
 }
+
+.container-fluid {
+  max-width: 100%;
+}
+
+img.fluid {
+  width: 100%;
+  display: inline-block;
+}
