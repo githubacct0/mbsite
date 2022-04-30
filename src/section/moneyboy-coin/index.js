@@ -13,28 +13,27 @@ function MoneyboyCoin() {
       component="section"
       id="moneyboy-coin"
       sx={{
+        position: "relative",
         background: "#7effa7",
-        backgroundImage: "url(/images/moneyboy-coin.webp)",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "auto 100%",
-        backgroundPosition: "left center",
+        overflow: "hidden",
         paddingY: "233px",
         [theme.breakpoints.down("xl")]: {
           paddingY: "180px",
         },
         [theme.breakpoints.down("lg")]: {
-          backgroundSize: "auto 80%",
           paddingY: "150px",
         },
         [theme.breakpoints.down("md")]: {
-          backgroundImage: "url(/images/moneyboy-coin-sp.png)",
-          backgroundPosition: "bottom center",
           padding: "80px 0 84%",
-          backgroundSize: "80% auto",
         },
       }}
     >
-      <Container fixed>
+      <Container
+        fixed
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        sx={{ position: "relative", zIndex: 100 }}
+      >
         <Grid container sx={{ alignItems: "center" }}>
           <Grid
             item
@@ -104,6 +103,30 @@ function MoneyboyCoin() {
           </Grid>
         </Grid>
       </Container>
+      <Box
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        sx={{
+          position: "absolute",
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0,
+          backgroundImage: "url(/images/moneyboy-coin.webp)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "auto 100%",
+          backgroundPosition: "left center",
+          [theme.breakpoints.down("lg")]: {
+            backgroundSize: "auto 80%",
+          },
+          [theme.breakpoints.down("md")]: {
+            backgroundImage: "url(/images/moneyboy-coin-sp.png)",
+            backgroundPosition: "bottom center",
+            backgroundSize: "80% auto",
+          },
+        }}
+      >
+      </Box>
     </Box>
   );
 }
