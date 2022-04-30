@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
@@ -11,6 +11,11 @@ function Header() {
   const handleClick = () => {
     setActive(!isActive);
   };
+  useEffect(() => {
+    if (isActive) document.body.classList.add("header-opened");
+    else document.body.classList.remove("header-opened");
+  }, [isActive]);
+
   return (
     <Box
       component="header"
