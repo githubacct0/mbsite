@@ -1,3 +1,7 @@
+body.header-opened {
+  overflow-y: hidden;
+}
+
 :root {
   --animate-delay: 0.1s;
   --animate-duration: 0.8s;
