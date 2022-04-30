@@ -105,6 +105,10 @@ function Top({ moneyboys }) {
           >
             <Grid
               container
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="700"
+              className="letter-animation"
               sx={{
                 justifyContent: "space-between",
                 alignItems: "center",

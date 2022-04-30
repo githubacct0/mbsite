@@ -32,6 +32,7 @@ function MoneyboyCoin() {
         fixed
         data-aos="fade-up"
         data-aos-duration="1000"
+        data-aos-once="true"
         sx={{ position: "relative", zIndex: 100 }}
       >
         <Grid container sx={{ alignItems: "center" }}>
@@ -108,6 +109,7 @@ function MoneyboyCoin() {
       <Box
         data-aos="fade-up"
         data-aos-duration="1000"
+        data-aos-once="true"
         sx={{
           position: "absolute",
           top: 0,

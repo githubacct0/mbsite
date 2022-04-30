@@ -45,7 +45,7 @@ function MoneyPlex() {
         },
       }}
     >
-      <Container fixed data-aos="fade-up" data-aos-duration="500">
+      <Container fixed data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
         <HeadChip
           label="PRODUCT"
           variant="outlined"
@@ -116,7 +116,7 @@ function MoneyPlex() {
           },
         }}
       >
-        <Box data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+        <Box data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
           <img src="/images/moneyplex-2.webp" alt="MoneyPlex" />
         </Box>
       </Box>

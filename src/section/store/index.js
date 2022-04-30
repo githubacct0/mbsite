@@ -14,7 +14,7 @@ function Store() {
       sx={{ background: "#ffd6e2", textAlign: "center", padding: "81.5px 0 0" }}
     >
       <Container fixed>
-        <Box data-aos="fade-up" data-aos-duration="1000">
+        <Box data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
           <HeadChip
             label="PRODUCT"
             sx={{ backgroundColor: "#dc5e83", color: "#ffffff" }}
@@ -51,6 +51,7 @@ function Store() {
         <Box
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
           sx={{
             marginTop: "50px",
             marginBottom: "-18%",

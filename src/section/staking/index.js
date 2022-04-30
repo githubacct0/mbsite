@@ -43,6 +43,7 @@ function Staking() {
               sx={{ paddingBottom: "130px" }}
               data-aos="fade-up"
               data-aos-duration="1000"
+              data-aos-once="true"
             >
               <HeadChip
                 label="FEATURE"
@@ -82,6 +83,7 @@ function Staking() {
         <Box
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
           sx={{
             position: "absolute",
             top: 0,
