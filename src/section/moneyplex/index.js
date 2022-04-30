@@ -69,7 +69,7 @@ function MoneyPlex() {
           <Box
             component="span"
             sx={{ [theme.breakpoints.up("sm")]: { display: "block" } }}
-          ></Box>
+          />
           Solana Blockchain.
         </Typography>
         <Box sx={{ marginTop: "35px" }}>
@@ -84,6 +84,7 @@ function MoneyPlex() {
         </Box>
         <ArrowLinkButton
           href="#"
+          target="_blank"
           endIcon={<ArrowForwardIcon />}
           mainColor="#ffffff"
           sx={{ marginTop: "28px" }}

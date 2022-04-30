@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import IconButton from "@mui/material/IconButton";
 import { useTheme } from "@mui/material/styles";
 
 function Letter({ letter, sx, image, setBackground }) {
@@ -65,6 +66,7 @@ function Top({ moneyboys }) {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        position: "relative",
       }}
     >
       <Container fixed>
@@ -193,6 +195,19 @@ function Top({ moneyboys }) {
           </Grid>
         </Grid>
       </Container>{" "}
+      <Box
+        sx={{
+          position: "absolute",
+          right: 0,
+          bottom: "48px",
+          left: 0,
+          textAlign: "center",
+        }}
+      >
+        <IconButton href="#moneyplex">
+          <img src="/images/arrow-down.svg" alt="Scroll down" />
+        </IconButton>
+      </Box>
     </Box>
   );
 }
