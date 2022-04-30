@@ -11,13 +11,13 @@ function Staking() {
   return (
     <Box
       component="section"
-      id="staking"
       sx={{
         background: "#0a216b",
         paddingTop: "18%",
       }}
     >
       <Box
+        id="staking"
         sx={{
           position: "relative",
           display: "flex",
