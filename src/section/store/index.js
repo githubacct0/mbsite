@@ -39,7 +39,7 @@ function Store() {
           </Typography>
 
           <ArrowLinkButton
-            href="#"
+            href="https://moneyplex.io/store"
             target="_blank"
             endIcon={<ArrowForwardIcon />}
             mainColor={"#060608"}

@@ -94,7 +94,7 @@ function MoneyboyCoin() {
                 $MBC by Staking.
               </Typography>
               <ArrowLinkButton
-                href="#"
+                href="https://solanamoneyboys.gitbook.io/usdmbc/mbc/money-boy-coin"
                 target="_blank"
                 endIcon={<ArrowForwardIcon />}
                 mainColor={"#060608"}

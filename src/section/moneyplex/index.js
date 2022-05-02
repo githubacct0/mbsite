@@ -83,7 +83,7 @@ function MoneyPlex() {
           <CustomChip label="Price Notifications" />
         </Box>
         <ArrowLinkButton
-          href="#"
+          href="https://moneyplex.io/"
           target="_blank"
           endIcon={<ArrowForwardIcon />}
           mainColor="#ffffff"

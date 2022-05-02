@@ -69,7 +69,7 @@ function Staking() {
                 earn passive income.
               </Typography>
               <ArrowLinkButton
-                href="#"
+                href="https://www.moneyplex-stake.io/"
                 target="_blank"
                 endIcon={<ArrowForwardIcon />}
                 mainColor={"#ffffff"}
