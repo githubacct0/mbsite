@@ -47,7 +47,7 @@ function MoneyPlex() {
     >
       <Container fixed data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
         <HeadChip
-          label="BETA"
+          label="PRODUCT"
           variant="outlined"
           sx={{ color: "#ffffff" }}
         />

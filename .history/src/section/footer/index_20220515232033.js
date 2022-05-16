@@ -80,7 +80,7 @@ function Footer() {
           <Grid item className="footer-logo">
             <Box sx={{ marginRight: "50px", marginBottom: "30px" }}>
               <Link href="#">
-                <img style = {{maxWidth:50, margin:5,borderRadius: 10,}} src="/images/logo.png" alt="Moneyboys" />
+                <img style = {{maxWidth:25, margin:5}} src="/images/logo.png" alt="Moneyboys" />
               </Link>
             </Box>
           </Grid>

@@ -78,7 +78,7 @@ function Header() {
         }}
       >
         <Grid item>
-          <img style = {{maxWidth:100, borderRadius: 10, margin:5}} src="/images/logo.png" alt="Moneyboys" />
+          <img style = {{maxWidth:100}} src="/images/logo.png" alt="Moneyboys" />
         </Grid>
         <Grid item>
           <div className="menu-icon" onClick={handleClick}>
